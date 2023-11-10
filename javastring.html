@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+function string()
+{
+var a=document.getElementById("c").value;
+var b=document.getElementById("d").value;
+
+document.getElementById("demo").innerHTML=a.slice(7,13);
+document.getElementById("e").innerHTML=a.substring(7,13);
+document.getElementById("f").innerHTML=a.substr(7);
+document.getElementById("g").innerHTML=a.replace("jackfruit","lemon");
+document.getElementById("i").innerHTML=a.length;
+
+var c=a.concat(" ",b);
+document.getElementById("h").innerHTML=c;
+}
+</script>
+</head>
+<body bgcolor="cyan">
+<center>
+<h1>STRING FUNCTION</h1>
+<label>enter the first string:</label>
+<input type="text" id="c"><br><br><br>
+    <label>enter the second string:</label>
+<input type="text" id="d"><br><br><br>
+    <button type="button" onclick="string()" > try it</button><br><br><br>
+<label>slice value:</label><label id="demo"> </label><br><br><br>
+<label>substring value:</label><label id="e"> </label><br><br><br>
+<label>substr value:</label><label id="f"> </label><br><br><br>
+<label>replace value:</label><label id="g"> </label><br><br><br>
+<label>concat value:</label><label id="h"> </label><br><br><br>
+<label>length of the string:</label><label id="i"></label><br><br><br>
+
+    </center>
+    </body>
+    </html>
