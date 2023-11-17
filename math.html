@@ -2,98 +2,55 @@
 <head>
   <script>
     function myFunction() {
-var x = document.getElementById("demo").value;
-console.log(x);
-document.getElementById("demo").value =Math.round(x);
+var x = document.getElementById("number").value;
+var choice = document.getElementById("mathFunction").value;
+if (choice==0) {
+  document.getElementById("number1").value =Math.round(x);
+} else if (choice==1) {
+  document.getElementById("number1").value =Math.ceil(x);
+} else if (choice==2) {
+  document.getElementById("number1").value =Math.floor(x);
+} else if (choice==3) {
+  document.getElementById("number1").value =Math.trunc(x);
+} else if (choice==4) {
+  document.getElementById("number1").value =Math.sign(x);
+} else if (choice==5) {
+  document.getElementById("number1").value =Math.pow(x,y);
+}  else if (choice==6) {
+  document.getElementById("number1").value =Math.sqrt(x,y);
+}  else if (choice==7) {
+document.getElementById("number1").value =Math.log(x);
 }
 
-function myFunction2() {
-var x = document.getElementById("demo2").value;
-console.log(x);
-document.getElementById("demo2").value =Math.ceil(x);
-}
-
-function myFunction3() {
-var x = document.getElementById("demo3").value;
-console.log(x);
-document.getElementById("demo3").value =Math.floor(x);
-}
-
-function myFunction4() {
-var x = document.getElementById("demo4").value;
-console.log(x);
-document.getElementById("demo4").value =Math.trunc(x);
-}
-
-function myFunction5() {
-var x = document.getElementById("demo5").value;
-console.log(x);
-document.getElementById("demo5").value =Math.sign(x);
-}
-
-function myFunction6() {
-var x = document.getElementById("demo6").value;
-var y = document.getElementById("demo6.1").value;
-console.log(x);
-document.getElementById("answer").value =Math.pow(x,y);
-}
-
-function myFunction7() {
-var x = document.getElementById("demo7").value;
-console.log(x);
-document.getElementById("demo7").value =Math.sqrt(x);
-}
-
-function myFunction8() {
-var x = document.getElementById("demo8").value;
-console.log(x);
-document.getElementById("demo8").value =Math.log(x);
 }
 </script>
-
 </head>
-<center>
-  <form>
-  <label ><b>Math.round(x)</b></label>
-<input type="text" id="demo">
+<body>
+  <center>
+<label ><b>Enter A Number</b></label>
+<input type="text" id="number">
+<br><br>
+
+Select A Function:
+
+<select name="mathFunction" id="mathFunction">
+<option value="">Select A Function</option>
+<option value="0">Math.round(x)</option>
+<option value="1">Math.ceil(x)</option>
+<option value="2">Math.floor(x))</option>
+<option value="3">Math.trunc(x)</option>
+<option value="4">Math.sign(x)</option>
+<option value="5">Math.pow(x,y)</option>
+<option value="6">Math.sqrt(x)</option>
+<option value="7">Math.log(x)</option>
+
+</select>
+<br><br>
+
 <button type="button" onclick="myFunction()">Try it</button>
-<br>
-
-<label ><b>Math.ceil(x)</b></label>
-<input type="text" id="demo2">
-<button type="button" onclick="myFunction2()">Try it</button>
-<br>
-
-<label ><b>Math.floor(x))</b></label>
-<input type="text" id="demo3">
-<button type="button" onclick="myFunction3()">Try it</button>
-<br>
-
-<label ><b>Math.trunc(x)</b></label>
-<input type="text" id="demo4">
-<button type="button" onclick="myFunction4()">Try it</button>
-<br>
-
-<label ><b>Math.sign(x)</b></label>
-<input type="text" id="demo5">
-<button type="button" onclick="myFunction5()">Try it</button>
-<br>
-
-<label ><b>Math.pow(x,y)</b></label>
-<input type="text" id="demo6">
-<input type="text" id="demo6.1">
-<input type="text" id="answer">
-
-<button type="button" onclick="myFunction6()">Try it</button>
-<br>
-
-<label ><b>Math.sqrt(x)</b></label>
-<input type="text" id="demo7">
-<button type="button" onclick="myFunction7()">Try it</button>
-<br>
-<label ><b>Math.log(x)</b></label>
-<input type="text" id="demo8">
-<button type="button" onclick="myFunction8()">Try it</button>
-<br>
-
+<br><br>
+<label ><b>Answer</b></label>
+<input type="text" id="number1">
+</center>
+</body>
 </html>

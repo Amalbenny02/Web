@@ -4,10 +4,10 @@
 
 
   </head>
-  <body>
+  <body bgcolor="grey">
  <center>
- <h1><u>Calender generator</u></h1>
-    <label for="year">Enter a year (like 2023):</label>
+ <h1><u>Calendar</u></h1>
+    <label for="year">Enter a year:</label>
     <input type="text" id="year">
     <label for="month">Enter a month (1-12):</label>
     <input type="text" id="month">
@@ -42,7 +42,42 @@
           }
           calendarArray.push(week);
         }
-        var calendarHTML = "<table><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+if(month==0){
+        var calendarHTML = "<table><tr><th>"+year+"</th><th>January</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==1){
+              var calendarHTML = "<table><tr><th>"+year+"</th><th>February</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==2){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>March</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==3){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>April</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==4){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>May</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==5){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>June</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==6){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>July</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==7){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>August</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==8){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>September</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+            }
+if(month==9){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>October</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+             }
+if(month==10){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>November</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+              }
+if(month==11){
+                    var calendarHTML = "<table><tr><th>"+year+"</th><th>December</th></tr><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+             }
         for (var i = 0; i < 6; i++) {
           calendarHTML += "<tr>";
           for (var j = 0; j < 7; j++) {
@@ -56,6 +91,7 @@
         }
         calendarHTML += "</table>";
         calendar.innerHTML = calendarHTML;
+
       }
     </script>
 </center>
