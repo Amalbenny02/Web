@@ -1,0 +1,121 @@
+<html>
+<head>
+<style>
+ .ques{
+        top:60px;
+        right:100px;
+        bottom: 0;
+
+        left: 100px;
+   padding-left: 300px;
+    width: 1000px;
+
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+</style>
+<script>
+function score(){
+    var mark=0;
+    if(document.getElementById('correct1').checked)
+    {
+        mark++;
+    }
+    if(document.getElementById('correct2').checked)
+    {
+        mark++;
+    }  if(document.getElementById('correct3').checked)
+    {
+        mark++;
+    }  if(document.getElementById('correct4').checked)
+    {
+        mark++;
+    }  if(document.getElementById('correct5').checked)
+    {
+        mark++;
+    }
+    if(mark<2){
+        alert("sorry,you have scored "+" "+mark+" "+"out of 5");
+    }else{
+        alert("congrats,you have scored"+" "+mark+" "+"out of 5");
+    }
+}
+
+
+         </script>
+
+
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMT_NP8qNvEpMhs92Sxq8a24Q_m55FqNHQDg&usqp=CAU">
+
+    <div class="ques">  <br><br><br>
+        Q1. Inside which HTML element do we put the JavaScript?
+        <br><br><br>
+        <input type="radio" name="q1">js</js><br><br>
+        <input type="radio" name="q1" id="correct1">script<br><br>
+        <input type="radio" name="q1">scripting<br><br>
+        <input type="radio" name="q1">javascript<br><br>
+
+
+
+        <br><br>
+        Q2.How can you make a numbered list?
+
+         <br><br><br>
+        <input type="radio" name="q2">list<br><br>
+        <input type="radio" name="q2">dl<br><br>
+        <input type="radio" name="q2">ul<br><br>
+        <input type="radio" name="q2" id="correct2">ol<br><br>
+
+        <br><br>
+
+
+        Q3.What does CSS stand for?
+        <br><br><br>
+        <input type="radio" name="q3">Creative style sheets<br><br>
+        <input type="radio" name="q3">Computer style sheets<br><br>
+        <input type="radio" name="q3"id="correct3">Cascading style sheets<br><br>
+        <input type="radio" name="q3">colourfuk style sheets<br><br>
+        <br><br>
+
+
+
+        Q4.Which HTML attribute is used to define inline styles?
+        <br><br><br>
+        <input type="radio" name="q4">Class<br><br>
+        <input type="radio" name="q4">styles<br><br>
+        <input type="radio" name="q4" id="correct4">style <br><br>
+        <input type="radio" name="q4">font<br><br>
+        <br><br>
+
+        Q5.How do you create a function in JavaScript?
+
+        <br><br><br>
+        <input type="radio" name="q5">function=myFunction()<br><br>
+        <input type="radio" name="q5">function:myFunction()<br><br>
+        <input type="radio" name="q5" id="correct5">function myFunction() <br><br>
+        <input type="radio" name="q5">function.myFunction()<br><br>
+        <br><br>
+
+
+
+                                                                                                                <input type="submit" value="SUBMIT" style="background-color: rgb(15, 107, 255);font-size: 18px;text-align: right;color: white;" onclick="score()">
+<br>
+<br>
+      <br>
+      <br>
+
+</div>
+</body>
+
+
+
+
+
+
+
+</html>
